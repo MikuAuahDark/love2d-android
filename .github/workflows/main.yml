@@ -26,8 +26,8 @@ jobs:
       if: ${{ failure() }}
       uses: actions/upload-artifact@v2
       with:
-        name: inspect_cxx
-        path: app/build/intermediates/cxx/Debug
+        name: inspect_build
+        path: app/build
     - name: Artifact (Normal debug APK)
       uses: actions/upload-artifact@v2
       with:
